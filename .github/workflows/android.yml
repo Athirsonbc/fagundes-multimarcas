@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build Debug APK
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout
@@ -27,7 +27,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       - name: Upload APK
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v3
         with:
           name: app-debug.apk
           path: app/build/outputs/apk/debug/app-debug.apk
