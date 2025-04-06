@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace "com.fagundes.multimarcas"
     compileSdk 34
 
     defaultConfig {
