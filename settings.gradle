@@ -1,2 +1,2 @@
-rootProject.name = "fagundes-multimarcas"
-include ':src'
+include(":src")
+project(":src").projectDir = file("src")
